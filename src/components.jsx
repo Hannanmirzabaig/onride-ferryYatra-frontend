@@ -22,7 +22,7 @@ export function Header({ page, go }) {
             <a key={k} href={k === "home" ? "/" : `/${k}`} className={page === k ? "active" : ""}
               onClick={(e) => { e.preventDefault(); setOpen(false); go(k); }}>{l}</a>
           ))}
-          <a className="btn btn-ghost" href={BRAND.holidays} target="_blank" rel="noreferrer">Holidays</a>
+          {/* <a className="btn btn-ghost" href={BRAND.holidays} target="_blank" rel="noreferrer">Holidays</a> */}
         </nav>
       </div>
     </header>
